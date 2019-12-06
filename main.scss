@@ -1,0 +1,116 @@
+// main.scss
+@import "base";
+
+@import "utilities/variables";
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 50vw 50vw;
+}
+
+%adjustcenter {
+  transform: translateY(-100%);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+#left {
+  // grid set-up for left side
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 100%;
+
+  // bg color
+  background-color: $bg-color;
+}
+
+#left {
+  header {
+    z-index: 2;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  #leftContent {
+    // adjust position to take up whole left side
+    position: relative;
+    top: -10vh;
+    height: 100vh;
+    // make it flexy
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #homeContent {
+      hgroup {
+        display: inherit;
+      }
+    }
+    #workContentLeft {
+      p {
+        //display: inherit;
+      }
+    }
+    #skillsContentLeft {
+      p {
+        display: inherit;
+      }
+    }
+  }
+}
+
+#right {
+  background-color: $bg-color-right;
+
+  overflow-y: scroll;
+}
+
+#about {
+  justify-content: center;
+  p {
+    display: inherit;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+}
+
+#workContentRight {
+  flex-direction: column;
+  align-items: center;
+  p {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  div {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+}
+
+#skillsContentRight {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  p {
+    display: inherit;
+    justify-content: center;
+  }
+}
