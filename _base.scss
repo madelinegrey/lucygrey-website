@@ -7,6 +7,9 @@ body {
   font-family: $font-stack;
   color: $font-color;
   overflow-y: hidden;
+  h3 {
+    font-style: italic;
+  }
 }
 
 ul {
@@ -20,4 +23,18 @@ ul {
 video {
   max-width: 100%;
   height: auto;
+}
+
+a:link {
+  color: $font-color;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+a:visited {
+  color: $link-visited-color;
+}
+
+a:hover {
+  color: $link-hover;
 }

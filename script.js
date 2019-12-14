@@ -45,52 +45,215 @@ function toggleShown(page) {
 
 // work scrolling function
 const workContent = document.getElementById("right");
-const test = document.getElementById("test");
 const work1 = document.getElementById("work1");
 const work2 = document.getElementById("work2");
+const work3 = document.getElementById("work3");
 workContent.onscroll = function(){
   console.log("entered");
   var y = workContent.scrollTop;
-  document.getElementById("demo").innerHTML = "Vertically: " + y + "px";
   console.log(y + "px");
   if (y <= 650) {
-    if (work1.classList.contains("visible")) {
-      work1.classList.remove("visible");
-      work1.classList.add("hidden");
-    }
     if (work2.classList.contains("visible")) {
       work2.classList.remove("visible");
       work2.classList.add("hidden");
     }
-    if (test.classList.contains("hidden")) {
-      test.classList.remove("hidden");
-      test.classList.add("visible");
-    }
-  } else if (y > 650 & y < 1200) {
-    if (test.classList.contains("visible")) {
-      test.classList.remove("visible");
-      test.classList.add("hidden");
-    }
-    if (work2.classList.contains("visible")) {
-      work2.classList.remove("visible");
-      work2.classList.add("hidden");
+    if (work3.classList.contains("visible")) {
+      work3.classList.remove("visible");
+      work3.classList.add("hidden");
     }
     if (work1.classList.contains("hidden")) {
       work1.classList.remove("hidden");
       work1.classList.add("visible");
     }
-  } else if (y >= 1200) {
-    if (test.classList.contains("visible")) {
-      test.classList.remove("visible");
-      test.classList.add("hidden");
+    if (work4.classList.contains("visible")) {
+      work4.classList.remove("visible");
+      work4.classList.add("hidden");
     }
+    if (work5.classList.contains("visible")) {
+      work5.classList.remove("visible");
+      work5.classList.add("hidden");
+    }
+    if (work6.classList.contains("visible")) {
+      work6.classList.remove("visible");
+      work6.classList.add("hidden");
+    }
+    if (work7.classList.contains("visible")) {
+      work7.classList.remove("visible");
+      work7.classList.add("hidden");
+    }
+  } else if (y > 650 & y < 1200) {
     if (work1.classList.contains("visible")) {
       work1.classList.remove("visible");
       work1.classList.add("hidden");
     }
+    if (work3.classList.contains("visible")) {
+      work3.classList.remove("visible");
+      work3.classList.add("hidden");
+    }
     if (work2.classList.contains("hidden")) {
       work2.classList.remove("hidden");
       work2.classList.add("visible");
+    }
+    if (work4.classList.contains("visible")) {
+      work4.classList.remove("visible");
+      work4.classList.add("hidden");
+    }
+    if (work5.classList.contains("visible")) {
+      work5.classList.remove("visible");
+      work5.classList.add("hidden");
+    }
+    if (work6.classList.contains("visible")) {
+      work6.classList.remove("visible");
+      work6.classList.add("hidden");
+    }
+    if (work7.classList.contains("visible")) {
+      work7.classList.remove("visible");
+      work7.classList.add("hidden");
+    }
+  } else if (y > 1200 & y < 1750) {
+    if (work1.classList.contains("visible")) {
+      work1.classList.remove("visible");
+      work1.classList.add("hidden");
+    }
+    if (work2.classList.contains("visible")) {
+      work2.classList.remove("visible");
+      work2.classList.add("hidden");
+    }
+    if (work3.classList.contains("hidden")) {
+      work3.classList.remove("hidden");
+      work3.classList.add("visible");
+    }
+    if (work4.classList.contains("visible")) {
+      work4.classList.remove("visible");
+      work4.classList.add("hidden");
+    }
+    if (work5.classList.contains("visible")) {
+      work5.classList.remove("visible");
+      work5.classList.add("hidden");
+    }
+    if (work6.classList.contains("visible")) {
+      work6.classList.remove("visible");
+      work6.classList.add("hidden");
+    }
+    if (work7.classList.contains("visible")) {
+      work7.classList.remove("visible");
+      work7.classList.add("hidden");
+    }
+  } else if (y > 1750 & y < 2300) {
+    if (work1.classList.contains("visible")) {
+      work1.classList.remove("visible");
+      work1.classList.add("hidden");
+    }
+    if (work2.classList.contains("visible")) {
+      work2.classList.remove("visible");
+      work2.classList.add("hidden");
+    }
+    if (work3.classList.contains("visible")) {
+      work3.classList.remove("visible");
+      work3.classList.add("hidden");
+    }
+    if (work4.classList.contains("hidden")) {
+      work4.classList.remove("hidden");
+      work4.classList.add("visible");
+    }
+    if (work5.classList.contains("visible")) {
+      work5.classList.remove("visible");
+      work5.classList.add("hidden");
+    }
+    if (work6.classList.contains("visible")) {
+      work6.classList.remove("visible");
+      work6.classList.add("hidden");
+    }
+    if (work7.classList.contains("visible")) {
+      work7.classList.remove("visible");
+      work7.classList.add("hidden");
+    }
+  } else if (y > 2300 & y < 2850) {
+    if (work1.classList.contains("visible")) {
+      work1.classList.remove("visible");
+      work1.classList.add("hidden");
+    }
+    if (work2.classList.contains("visible")) {
+      work2.classList.remove("visible");
+      work2.classList.add("hidden");
+    }
+    if (work3.classList.contains("visible")) {
+      work3.classList.remove("visible");
+      work3.classList.add("hidden");
+    }
+    if (work4.classList.contains("visible")) {
+      work4.classList.remove("visible");
+      work4.classList.add("hidden");
+    }
+    if (work5.classList.contains("hidden")) {
+      work5.classList.remove("hidden");
+      work5.classList.add("visible");
+    }
+    if (work6.classList.contains("visible")) {
+      work6.classList.remove("visible");
+      work6.classList.add("hidden");
+    }
+    if (work7.classList.contains("visible")) {
+      work7.classList.remove("visible");
+      work7.classList.add("hidden");
+    }
+  } else if (y > 2850 & y < 3400) {
+    if (work1.classList.contains("visible")) {
+      work1.classList.remove("visible");
+      work1.classList.add("hidden");
+    }
+    if (work2.classList.contains("visible")) {
+      work2.classList.remove("visible");
+      work2.classList.add("hidden");
+    }
+    if (work3.classList.contains("visible")) {
+      work3.classList.remove("visible");
+      work3.classList.add("hidden");
+    }
+    if (work4.classList.contains("visible")) {
+      work4.classList.remove("visible");
+      work4.classList.add("hidden");
+    }
+    if (work5.classList.contains("visible")) {
+      work5.classList.remove("visible");
+      work5.classList.add("hidden");
+    }
+    if (work6.classList.contains("hidden")) {
+      work6.classList.remove("hidden");
+      work6.classList.add("visible");
+    }
+    if (work7.classList.contains("visible")) {
+      work7.classList.remove("visible");
+      work7.classList.add("hidden");
+    }
+  } else if (y >= 3400) {
+    if (work1.classList.contains("visible")) {
+      work1.classList.remove("visible");
+      work1.classList.add("hidden");
+    }
+    if (work2.classList.contains("visible")) {
+      work2.classList.remove("visible");
+      work2.classList.add("hidden");
+    }
+    if (work3.classList.contains("visible")) {
+      work3.classList.remove("visible");
+      work3.classList.add("hidden");
+    }
+    if (work4.classList.contains("visible")) {
+      work4.classList.remove("visible");
+      work4.classList.add("hidden");
+    }
+    if (work5.classList.contains("visible")) {
+      work5.classList.remove("visible");
+      work5.classList.add("hidden");
+    }
+    if (work6.classList.contains("visible")) {
+      work6.classList.remove("visible");
+      work6.classList.add("hidden");
+    }
+    if (work7.classList.contains("hidden")) {
+      work7.classList.remove("hidden");
+      work7.classList.add("visible");
     }
   }
 }
